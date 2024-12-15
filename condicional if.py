@@ -1,10 +1,25 @@
-#condicionales 
+"""#condicionales 
 examen =int(input("digite un numero"))
 if examen>=7:
     print("examen aprobado")
 elif examen==0:
     print("examen no aprobado")
 else:
-    print("examen repetir")
+
+    print("examen repetir")"""
+
+# definir una funcion para sumar dos numeros 
+def restar(num1, num2):
+    if num1 >0 and num2 >0:
+        resta = num1 - num2
+        return f"la resta de {num1} y {num2}es:{resta}"
+    else:
+        return "ambos numeros deben ser mayores que cero"
     
-    
+# solicitar al usuario numeros 
+num1 = float(input("ingrese un numero: "))
+num2 = float(input("ingrese un numero: "))
+
+# la funcion debe mostrar resultado 
+resultado = restar(num1, num2)
+print(resultado)
